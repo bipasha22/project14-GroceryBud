@@ -1,0 +1,226 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #CCD1E4;
+    color: #0E185F;
+    line-height: 1.5;
+    font-size: 3px;
+}
+h3{
+    font-size: 18px;
+    line-height: 1;
+}
+
+
+  .btn{
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #063251;
+    padding: 4px 0 ;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 10px;
+    border: 2px solid #063251;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    color: #fff;
+    background-color: #000;
+  }
+
+  .section{
+      padding: 10px 5px;
+
+  }
+
+  .section-center{
+    width: 90vw;
+  margin: 0 auto;
+  max-width:60vw;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .section-center {
+      width: 95vw;
+    }
+  }
+
+  .section-center:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .alert {
+    margin-bottom: 5px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+  }
+  .alert-success {
+    color: #155724;
+    background: #d4edda;
+  }
+
+  .grocery-form h3 {
+    color: #063251;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .form-control {
+    display: flex;
+    justify-content: center;
+  }
+  #grocery {
+    padding: 5px;
+    padding-left: 7px;
+    background-color: #9eb2c7;
+    border-color: transparent;
+    font-size: 10px;
+    flex: 1 0 auto;
+    color: #617d98;
+  }
+  #grocery::placeholder {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #617d98;
+  }
+
+
+  .grocery-container {
+    margin-top: 2rem;
+    transition: all 0.3s linear ;
+    visibility: hidden;
+  }
+
+  .show-container {
+    visibility: visible;
+  }
+
+  .submit-btn {
+    background-color: #a5d5f8;
+    border-color: transparent;
+    flex: 0 0 10px;
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    content: #49a6e9;
+    font-size: 10px;
+  }
+  .submit-btn:hover {
+    background-color: #49a6e9;
+    color: #fff;
+  }
+
+
+  .grocery-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+  .grocery-item:hover {
+    color: #617d98;
+    background-color: #f1f5f8;
+  }
+  .grocery-item:hover .title {
+    color: #617d98;
+  }
+  .title {
+    margin-bottom: 0;
+    color: #000;
+    letter-spacing: 2px;
+    transition:all 0.3s linear;
+    font-size: 10px;
+  }
+  .edit-btn,
+  .delete-btn {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 10px;
+    margin: 0 5px;
+    transition: all 0.3s linear;
+    justify-content: end;
+  }
+  .edit-btn {
+    color: #6be675;
+  }
+  .edit-btn:hover {
+    color: #25bb32;
+  }
+  .delete-btn {
+    color: #bb2534;
+  }
+  .delete-btn:hover {
+    color: #991e2b;
+  }
+
+  .clear-btn {
+    text-transform: capitalize;
+    /* width: 20px;
+    height: 10px; */
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: #991e2b;
+    margin: 0 auto;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .clear-btn:hover {
+    color: #adadad;
+  }
+
+  @media screen and (max-width : 280px) {
+      .submit-btn{
+        width: .75 rem;
+        padding: 0;
+        font-size: 7px;
+      }
+
+      .form-control{
+          padding: 0 5px 0;
+      }
+     
+    
+  }
+
+  @media screen and (min-width: 700px) {
+      #grocery{
+        
+           flex: 0 0 0;
+        }
+  }
+  
